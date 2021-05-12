@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 class MyAdapter(val songs:List<Song>):RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val inflater :LayoutInflater= LayoutInflater.from(parent.context)
-        val view = inflater.inflate(R.layout.layout,parent,false)
+        val view = inflater.inflate(R.layout.row_layout,parent,false)
         return MyViewHolder(view);
     }
 
